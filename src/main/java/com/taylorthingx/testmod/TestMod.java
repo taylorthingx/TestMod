@@ -35,8 +35,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(ExampleMod.MODID)
-public class ExampleMod
+@Mod(TestMod.MODID)
+public class TestMod
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "testmod";
@@ -69,7 +69,7 @@ public class ExampleMod
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public ExampleMod(IEventBus modEventBus, ModContainer modContainer)
+    public TestMod(IEventBus modEventBus, ModContainer modContainer)
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
